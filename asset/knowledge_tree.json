@@ -1,0 +1,161 @@
+{
+ "skill": "c-expert",
+ "leaves": [
+  {
+   "id": "value-representation",
+   "title": "类型与值表示",
+   "priority": 1,
+   "keywords": [
+    "sizeof",
+    "对齐",
+    "整数提升",
+    "符号性",
+    "stdint",
+    "_Bool"
+   ]
+  },
+  {
+   "id": "pointer-arithmetic",
+   "title": "指针与数组",
+   "priority": 2,
+   "keywords": [
+    "数组衰减",
+    "one-past",
+    "ptrdiff_t",
+    "下标",
+    "多维数组",
+    "restrict"
+   ]
+  },
+  {
+   "id": "memory-ownership",
+   "title": "动态分配与所有权",
+   "priority": 3,
+   "keywords": [
+    "malloc",
+    "free",
+    "realloc",
+    "泄漏",
+    "所有权",
+    "arena"
+   ]
+  },
+  {
+   "id": "string-byte",
+   "title": "字符串与字节操作",
+   "priority": 4,
+   "keywords": [
+    "NUL",
+    "snprintf",
+    "memcpy",
+    "memmove",
+    "strlcpy",
+    "截断"
+   ]
+  },
+  {
+   "id": "declaration-linkage",
+   "title": "声明作用域与链接",
+   "priority": 5,
+   "keywords": [
+    "static",
+    "extern",
+    "typedef",
+    "翻译单元",
+    "多重定义",
+    "符号表"
+   ]
+  },
+  {
+   "id": "header-modular",
+   "title": "头文件与模块组织",
+   "priority": 6,
+   "keywords": [
+    "include guard",
+    "IWYU",
+    "前置声明",
+    "ABI",
+    "循环包含",
+    "编译防火墙"
+   ]
+  },
+  {
+   "id": "undefined-behavior",
+   "title": "未定义行为与序列点",
+   "priority": 7,
+   "keywords": [
+    "UB",
+    "序列点",
+    "有符号溢出",
+    "严格别名",
+    "未初始化",
+    "优化假设"
+   ]
+  },
+  {
+   "id": "io-error-handling",
+   "title": "I/O 与错误处理",
+   "priority": 8,
+   "keywords": [
+    "errno",
+    "返回值",
+    "EOF",
+    "fopen",
+    "错误路径",
+    "资源清理"
+   ]
+  },
+  {
+   "id": "concurrency-atomics",
+   "title": "并发与原子",
+   "priority": 9,
+   "keywords": [
+    "pthread",
+    "_Atomic",
+    "mutex",
+    "内存序",
+    "条件变量",
+    "信号安全"
+   ]
+  },
+  {
+   "id": "build-portability",
+   "title": "构建与可移植性",
+   "priority": 10,
+   "keywords": [
+    "Makefile",
+    "CMake",
+    "-std",
+    "交叉编译",
+    "POSIX",
+    "平台API"
+   ]
+  },
+  {
+   "id": "tooling-static-analysis",
+   "title": "工具与静态分析",
+   "priority": 11,
+   "keywords": [
+    "gcc诊断",
+    "clang-tidy",
+    "cppcheck",
+    "sanitizer",
+    "valgrind",
+    "告警基线"
+   ]
+  },
+  {
+   "id": "performance-lowering",
+   "title": "性能与底层",
+   "priority": 12,
+   "keywords": [
+    "restrict",
+    "向量化",
+    "缓存",
+    "内联",
+    "测量",
+    "别名"
+   ]
+  }
+ ]
+}
