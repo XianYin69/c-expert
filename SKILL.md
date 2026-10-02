@@ -43,7 +43,7 @@ tooling-static-analysis · performance-lowering；索引 [references/知识树/]
 - 不得臆造 ISO 条文编号或标准归属；C89 事实不得当 C11/C17/C23 结论使用。
 - 不得以 `volatile` 代 `_Atomic`/mutex、以 sleep 代同步、以未注明所有权的返回指针当安全接口。
 - 遇不明必派 file_ops 联网学习（[浏览器学习约束](resistance/浏览器学习约束/浏览器学习约束.md)），未确证条目标 `[本地]`，严禁臆造 URL。
-- 悬空链接必须为 0；所有 .md 与脚本 ≤50 行；缓存文件不得写入 skill 目录；只维护本技能目录。
+- 悬空链接必须为 0；所有 .md ≤ 50 行（50 行红线只约束 markdown 文本；脚本 .py/.ps1/.sh/.cmd 不限行数，但仍禁裸 except、print 调试残留、>100 字符长行、超长函数）；缓存文件不得写入 skill 目录；只维护本技能目录。
 - Git 工作流：功能分支提交→审核通过合 `dev`→整体审查通过合 `main`（推送前须用户确认，本技能不 push）。
 
 ## 详细流程
