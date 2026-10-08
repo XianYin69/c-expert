@@ -4,7 +4,7 @@ BASES = [("skill_manage_system", "skill", "scripts"),
          ("skill_manage_system", "skill", "sub_skills", "file_ops"),
          ("skill_manage_system", "sub_skills", "file_ops")]
 def ff_lite():
-    root = os.path.join(os.path.expanduser("~"), ".kilocode", "skills")
+    root = (os.environ.get("SMS_SKILLS") or os.path.join(os.environ.get("LOCALAPPDATA") or os.path.expanduser("~"), "SMS", "skills"))
     for parts in BASES:
         for n in ("ff_lite.py", "ff_lite"):
             p = os.path.join(root, *parts, n)
