@@ -1,5 +1,6 @@
 """browser_learn.py — 浏览器学习入口：派 file_ops（ff_lite.py search/fetch）取证，结论落 tmp 供蒸馏。"""
-import os, subprocess, sys, time
+import os, sys, time
+import nw_shim as nw  # 静默子进程垫片＝no_window 口径（批41 F4·本体不可达时自备兜底）
 BASES = [("skill_manage_system", "skill", "scripts"),
          ("skill_manage_system", "skill", "sub_skills", "file_ops"),
          ("skill_manage_system", "sub_skills", "file_ops")]
@@ -20,7 +21,7 @@ def main():
     mode, arg = ("fetch", g("--fetch")) if "--fetch" in a else ("search", q)
     cmd = [sys.executable, "-B", tool, mode, arg]
     if dry: print("[预览]", " ".join(cmd)); return
-    r = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+    r = nw.run(cmd, capture_output=True, text=True, timeout=120)
     os.makedirs(out, exist_ok=True)
     f = os.path.join(out, time.strftime("learn-%Y%m%d-%H%M%S.md"))
     open(f, "w", encoding="utf-8").write(

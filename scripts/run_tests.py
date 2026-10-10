@@ -1,8 +1,8 @@
 """run_tests.py — 构建与测试执行器：pytest 优先，缺失降级 unittest，默认 --dry-run 预览。"""
-import os, subprocess, sys, time
+import os, sys, time
+import nw_shim as nw  # 静默子进程垫片＝no_window 口径（批41 F4·本体不可达时自备兜底）
 def has(mod):
-    return subprocess.run([sys.executable, "-c", "import " + mod],
-                          capture_output=True).returncode == 0
+    return nw.run([sys.executable, "-c", "import " + mod], capture_output=True).returncode == 0
 def plan(path):
     cmds = []
     if os.path.isdir(os.path.join(path, "tests")):
@@ -26,7 +26,7 @@ def main():
         return
     t0, fails = time.time(), 0
     for c in cmds:
-        r = subprocess.run(c, capture_output=True, text=True, timeout=600)
+        r = nw.run(c, capture_output=True, text=True, timeout=600)
         print("$", os.path.basename(c[0]) if len(c[0]) < 40 else "py", " ".join(c[1:]),
               "-> rc", r.returncode)
         print(((r.stdout or "") + (r.stderr or ""))[-600:])
