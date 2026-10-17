@@ -20,7 +20,7 @@
 - [本地] 未确证条目：**0**（候选清单全部确证；`cguide.html` 实测 404，故不引用该 URL）
 
 ## 专项能力索引（外置薄技能·只引用不内嵌）
-并发架构 → concurrency-design；编码规范 → code-guidelines；已验证范式 → pavedpath-code；
+并发架构 → concurrency-design；编码规范 → general-software-dev；已验证范式 → pavedpath-code；
 UI → ui-design；数据库 → database-management；文件与联网取证 → file_ops。
 声明见 [dependence/](../dependence/dependence.md)。
 

@@ -4,7 +4,7 @@
 （trust 标注·未审/隔离拒装·仓库下载须网络授权）。
 ```
 file_ops             | skill    | local:skill_manage_system
-code-guidelines      | skill    | local
+general-software-dev      | skill    | local
 pavedpath-code       | skill    | local
 ui-design            | skill    | local
 database-management  | skill    | local
@@ -16,7 +16,7 @@ git                  | software | system
 | 依赖 | 承担能力 | 触发节点 |
 |---|---|---|
 | file_ops | 联网检索/取页（ff_lite.py search/fetch）、文件读写 | 浏览器学习 · 知识库构建 · 经验查询 |
-| code-guidelines | 命名/注释/复杂度/评审通用准则 | 脚本构建 · 整体审查 |
+| general-software-dev | 命名/注释/复杂度/评审通用准则 | 脚本构建 · 整体审查 |
 | pavedpath-code | 已验证实现范式与脚手架 | 脚本构建 · 重构建议（输出交付） |
 | ui-design | 界面/交互专项判断（本技能不自行装 UI） | 分支分析（转派） |
 | database-management | 存储/查询/迁移专项（转派，不内嵌） | 分支分析（转派） |

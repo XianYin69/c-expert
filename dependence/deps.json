@@ -11,12 +11,12 @@
       "source_url_status": "verified"
     },
     {
-      "name": "code-guidelines",
+      "name": "general-software-dev",
       "type": "skill",
-      "source_url": "local://code-guidelines",
+      "source_url": "local://general-software-dev",
       "license": "unknown",
       "version": "local",
-      "install": "sms:install code-guidelines",
+      "install": "sms:install general-software-dev",
       "checked_at": "2026-09-29T23:46",
       "source_url_status": "verified"
     },
